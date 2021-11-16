@@ -25,7 +25,7 @@ namespace ShipItTest
             var employee = new EmployeeBuilder().CreateEmployee();
             employeeRepository.AddEmployees(new List<Employee>() {employee});
             Assert.AreEqual(employeeRepository.GetEmployeeByName(employee.Name).Name, employee.Name);
-            Assert.AreEqual(employeeRepository.GetEmployeeByName(employee.Name).Ext, employee.ext);
+            Assert.AreEqual(employeeRepository.GetEmployeeByName(employee.Name).Ext, employee.extension);
             Assert.AreEqual(employeeRepository.GetEmployeeByName(employee.Name).WarehouseId, employee.WarehouseId);
         }
 
@@ -166,7 +166,7 @@ namespace ShipItTest
             return A.WarehouseId == B.WarehouseId
                    && A.Name == B.Name
                    && A.role == B.role
-                   && A.ext == B.ext;
+                   && A.extension == B.extension;
         }
     }
 }

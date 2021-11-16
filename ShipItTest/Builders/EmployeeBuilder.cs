@@ -32,9 +32,9 @@ namespace ShipItTest.Builders
             return this;
         }
 
-        public EmployeeBuilder setExt(String ext)
+        public EmployeeBuilder setExt(String extension)
         {
-            this.Ext = ext;
+            this.Ext = extension;
             return this;
         }
 
@@ -55,7 +55,7 @@ namespace ShipItTest.Builders
                 Name = this.Name,
                 WarehouseId = this.WarehouseId,
                 role = this.Role,
-                ext = this.Ext
+                extension = this.Ext
             };
         }
 
@@ -70,7 +70,7 @@ namespace ShipItTest.Builders
                         Name = this.Name,
                         WarehouseId = this.WarehouseId,
                         role = this.Role,
-                        ext = this.Ext
+                        extension = this.Ext
                     }
                 }
             };
